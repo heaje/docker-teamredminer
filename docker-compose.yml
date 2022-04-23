@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  teamredminer:
+    image: teamredminer
+    build:
+      context: .
+      args:
+        - DEBIAN_FRONTEND=noninteractive
+        - TRM_VERSION=v0.9.4.2
+        - AMDGPU_PRO_VERSION=21.50.2.50002-1
